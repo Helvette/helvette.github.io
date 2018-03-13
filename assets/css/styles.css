@@ -1,0 +1,130 @@
+/* negro: #0e0004 burdeo: #53131e verde: #1a281f beige: #f2efea blanco: #ffffff*/
+
+body {
+  height: 100vh;
+  position: relative;
+  background-color: #0e0004!important;
+}
+
+.toDown {
+  text-transform: lowercase;
+}
+
+aside {
+  margin-top: 60px;
+  margin-left: 5%;
+  width: 50px;
+  position: absolute;
+  color: #ffffff;
+}
+
+aside .button {
+  text-align: center;
+  margin: 0 auto;
+}
+
+aside .button button {
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 50px;
+  text-align: center;
+  font-family: 'VT323', monospace;
+}
+
+#menu li {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  margin: 0 auto;
+  line-height: 15px;
+  position: relative;
+}
+
+#menu li.last {
+  background-color: #ffffff;
+}
+
+#menu .v-line {
+  position: absolute;
+  left: 18px;
+  width: 30px;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+#menu button {
+  position: absolute;
+  left: 48px;
+  height: auto;
+  line-height: 30px;
+  width: 100px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+#menu button#footer {
+  width: 85vw;
+  left: 48px;
+}
+
+.line {
+  margin: 0 auto;
+  height: 80px;
+  width: 3px;
+  background-color: #ffffff;
+}
+
+.line.last {
+  height: 160px;
+}
+
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+
+.content {
+
+  position: absolute;
+
+  padding-top: 60px;
+  padding-left: 25%;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.content-container {
+  border-radius: 3px;
+  width: 95%;
+  height: 80%;
+  background-color: #EEEEEE;
+}
+
+
+#particles-js {
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  height: 99%;
+  width: 100%;
+  background-color: #0e0004;
+  position: absolute;
+}
+
