@@ -4,7 +4,8 @@
   "description": "Portafolio Leticia Rodríguez Ferreira",
   "main": "app.js",
   "dependencies": {
-    "devicon": "^2.0.0"
+    "devicon": "^2.0.0",
+    "typed.js": "^2.0.6"
   },
   "devDependencies": {},
   "scripts": {

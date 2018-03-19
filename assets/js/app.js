@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
   console.log('miau')
   console.log(projects)
@@ -10,6 +12,9 @@ $(document).ready(function() {
   contact.forEach(function(item) {
     console.log(item);
   })
+
+
+
 })
 
 

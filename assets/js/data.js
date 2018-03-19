@@ -56,7 +56,7 @@ const projects = [
   }
 ]
 
-// https://github.com/konpa/devicon
+// revisar https://github.com/konpa/devicon para los detalles
 const skills = [
  {
   name: 'HTML5',
