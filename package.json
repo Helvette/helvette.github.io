@@ -1,29 +1,20 @@
 {
-  "name": "helvette.github.io",
+  "name": "portafolio",
   "version": "1.0.0",
-  "description": "Portafolio Leticia Rodríguez Ferreira",
+  "description": "Leticia Rodríguez Ferreira's Portfolio",
   "main": "app.js",
-  "dependencies": {
-    "devicon": "^2.0.0",
-    "typed.js": "^2.0.6"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Helvette/helvette.github.io.git"
-  },
   "keywords": [
     "front-end-developer",
+    "portfolio",
     "chile",
-    "portafolio"
+    "javascript"
   ],
   "author": "Leticia Rodríguez Ferreira",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Helvette/helvette.github.io/issues"
-  },
-  "homepage": "https://github.com/Helvette/helvette.github.io#readme"
+  "dependencies": {
+    "animate.css": "^3.6.1"
+  }
 }

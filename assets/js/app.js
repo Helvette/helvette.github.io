@@ -1,149 +1,21 @@
-
-
-$(document).ready(function() {
-  console.log('miau')
-  console.log(projects)
-  projects.forEach(function(item) {
-    console.log(item);
-  })
-  skills.forEach(function(item) {
-    console.log(item);
-  })
-  contact.forEach(function(item) {
-    console.log(item);
-  })
-
-
-
-})
-
-
-
-
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json):
-
-particlesJS('particles-js',
-  
-  {
-  "particles": {
-    "number": {
-      "value": 118,
-      "density": {
-        "enable": true,
-        "value_area": 1183.721462448409
-      }
-    },
-    "color": {
-      "value": "#f2efea"
-    },
-    "shape": {
-      "type": "circle",
-      "stroke": {
-        "width": 0,
-        "color": "#000000"
-      },
-      "polygon": {
-        "nb_sides": 7
-      },
-      "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
-      }
-    },
-    "opacity": {
-      "value": 0.5,
-      "random": false,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "opacity_min": 0.1,
-        "sync": false
-      }
-    },
-    "size": {
-      "value": 3,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
-        "sync": false
-      }
-    },
-    "line_linked": {
-      "enable": true,
-      "distance": 150,
-      "color": "#ffffff",
-      "opacity": 0.4,
-      "width": 1
-    },
-    "move": {
-      "enable": true,
-      "speed": 3.206824121731046,
-      "direction": "none",
-      "random": false,
-      "straight": false,
-      "out_mode": "out",
-      "bounce": false,
-      "attract": {
-        "enable": false,
-        "rotateX": 600,
-        "rotateY": 1200
-      }
-    }
-  },
-  "interactivity": {
-    "detect_on": "canvas",
-    "events": {
-      "onhover": {
-        "enable": false,
-        "mode": "bubble"
-      },
-      "onclick": {
-        "enable": true,
-        "mode": "push"
-      },
-      "resize": true
-    },
-    "modes": {
-      "grab": {
-        "distance": 400,
-        "line_linked": {
-          "opacity": 1
-        }
-      },
-      "bubble": {
-        "distance": 400,
-        "size": 40,
-        "duration": 2,
-        "opacity": 8,
-        "speed": 3
-      },
-      "repulse": {
-        "distance": 200,
-        "duration": 0.4
-      },
-      "push": {
-        "particles_nb": 4
-      },
-      "remove": {
-        "particles_nb": 2
-      }
-    }
-  },
-  "retina_detect": true
+var options = {
+  "animate": true,
+  "patternWidth": 263.08,
+  "patternHeight": 100,
+  "grainOpacity": 0.52,
+  "grainDensity": 1.62,
+  "grainWidth": 1,
+  "grainHeight": 1
 }
-);
-*/
+
+grained('#noise', options);
+
+
+setTimeout(function(){ $('#noise').hide() }, 1000);
+
+//$('#noise').delay(800).fadeOut();
+$('.content').hide().delay(790).show();
+$('#home').on('mouseenter', '.btn-nav', function() {
+  $('.btn-nav').removeClass('for-hover animated infinite flash');
+  $(this).addClass('for-hover animated infinite flash');
+})
