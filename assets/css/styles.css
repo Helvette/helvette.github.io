@@ -141,7 +141,7 @@ nav .nav .in-section {
   box-shadow: 5px 0 0px 0px #ccc;
   color: white;
   text-shadow: -1px 1px black, -1px 0 black, 1px 0 black, 0 -1px black;
-    font-family: 'Press Start 2P', monospace;
+  font-family: 'Press Start 2P', monospace;
 }
 
 nav .nav .in-section .circle {
@@ -153,6 +153,21 @@ nav .nav .in-section .circle {
   position: absolute;
   right: 20px;
   bottom: 17.5px;
+}
+
+nav .nav.on-skills .in-section {
+  width: 310px;
+}
+
+nav .nav.on-quests .in-section {
+  width: 370px;
+}
+
+nav .nav.on-contact .in-section {
+  width: 430px;
+}
+.in-section {
+  transition: width 0.5s ease;
 }
 
 nav .nav .decoration {
