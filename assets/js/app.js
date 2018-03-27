@@ -20,7 +20,7 @@ let quests = '<div class="nav on-quests"><ul class="section-info"><li class="in-
 
 let contact = '<div class="nav on-contact"><ul class="section-info"><li class="in-section"><span data-future="contact">Contacto</span> <div class="circle"></div></li><li class="decoration"><div class="circle"></div><div class="circle"></div><div class="circle"></div></li></ul><ul class="mi-menu"><li><a data-menuanchor="about" href="#about" class="about">Biografía</a></li><li><a data-menuanchor="skills" href="#skills" class="skills">Habilidades</a></li><li><a data-menuanchor="quests" href="#quests" class="quests">Misiones</a></li><li><a data-menuanchor="home" href="#home" class="home"><i class="fas fa-times-circle"></i></a></li></ul></div>';
 
-let navObj = {
+const navObj = {
   about,
   skills,
   quests,
@@ -49,7 +49,7 @@ $('.mi-menu').on('click', '.home', function(){
 $('nav').on('click', 'li a', function() {
   let anchor = $(this).attr('data-menuanchor')
   let newContent = navObj[anchor];
-  console.log(newContent)
+  //console.log(newContent)
   $('nav').html(newContent);
   if ($(this).attr('data-menuanchor') === 'home') {
     $('nav').hide()
