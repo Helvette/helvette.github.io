@@ -1,21 +1,39 @@
+// efecto ruido
 var options = {
   "animate": true,
-  "patternWidth": 263.08,
-  "patternHeight": 100,
-  "grainOpacity": 0.52,
-  "grainDensity": 1.62,
+  "patternWidth": 445.16,
+  "patternHeight": 445.16,
+  "grainOpacity": 0.88,
+  "grainDensity": 1,
   "grainWidth": 1,
   "grainHeight": 1
 }
-
 grained('#noise', options);
 
-
-setTimeout(function(){ $('#noise').hide() }, 1000);
-
-//$('#noise').delay(800).fadeOut();
-$('.content').hide().delay(790).show();
+// funciones
 $('#home').on('mouseenter', '.btn-nav', function() {
   $('.btn-nav').removeClass('for-hover animated infinite flash');
   $(this).addClass('for-hover animated infinite flash');
+})
+
+function animating(element, effect){
+  $(element).addClass(`animated ${effect}`)
+}
+
+// ejecutar al cargar la página
+$(document).ready(function() {
+    $('#noise').delay(500).fadeOut();
+    $('.content').hide().delay(1000).fadeIn()
+    animating('#home .name', 'flipInX')
+    animating('#home .home-nav', 'fadeIn')
+    animating('#home hr', 'fadeIn')
+    animating('#home .sup', 'flipInX')
+    $('#pagepiling').pagepiling({
+      menu: '#mi-menu',
+      direction: 'horizontal',
+      anchors: ['home','about', 'skills', 'quests', 'contact'],
+      navigation: false,
+      normalScrollElements: '#home, #about, #skills, #quests, #contact',
+      verticalCentered: false
+    });
 })

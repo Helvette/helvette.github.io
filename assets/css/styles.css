@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: black;
 }
 
 .content {
@@ -8,10 +9,10 @@ body {
   max-width: 1500px;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 section {
-  padding: 80px 40px;
   height: 100%;
 }
 
@@ -28,6 +29,10 @@ ul {
   padding: 0;
 }
 
+#home, #about, #skills, #quests, #contact {
+  padding: 120px;
+  background-color: black;
+}
 
 /* HOME */
 #noise {
@@ -48,6 +53,7 @@ ul {
   text-transform: uppercase;
   text-shadow: -1px 1px black, -1px 0 black, 1px 0 black, 0 -1px black;
   text-align: center;
+  overflow: hidden;
 }
 
 .header {
@@ -59,7 +65,7 @@ ul {
   margin-bottom: 15px;
 }
 
-.header sup {
+.header .sup {
   font-size: 14px;
 }
 
@@ -75,6 +81,13 @@ ul {
 .btn-nav {
   position: relative;
   cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.btn-nav:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .for-hover::before {
@@ -85,13 +98,7 @@ ul {
   text-shadow: -2px -4px black, -2px 4px black, 2px 0 black, 0 -2px black;
   position: absolute;
   left: -30px;
-}
-/*FIN HOME*/
-
-
-#about, #skills, #quests, #contact {
-  padding: 120px;
-}
+} /*FIN HOME*/
 
 /* ABOUT */
 #about {
@@ -101,88 +108,39 @@ ul {
 .genre i {
   color: pink;
   text-shadow: -2px 0 black, -2px 0 black, 2px 0 black, 0 -2px black;
-}
-
-.medals ul li:not(.li-text) {
-  display: inline-block;
-  width: 75px;
-  padding: 3px;
-  background-color: beige; /*#DBDFAC*/
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 5px;
-  border: 1px dashed black;
-}
-
-.medals ul li.li-text {
-  padding: 0 5px 12px 0;
-  font-size: 16px;
-}
-
-.medals ul li img {
-  width: 100%;
-  height: auto;
-}
-
-/* paragraphs and hr */
-#about hr {
-  margin: 32px 0;
-  border: 2px dashed black; /**/
-}
-
-#about hr:last-of-type {
-  margin-bottom: 0;
-}
-
-#about p {
-  padding: 5px 20px;
-  margin: 0;
-}
-
-.bold {
-  color: black; /*#DB162F*/
-  font-size: 22px;
-  font-weight: bold;
-}
-/* FIN ABOUT */
+} /* FIN ABOUT */
 
 /* SKILLS */
 
-#skills li {
-  padding: 5px;
-}
-
-.skill-card {
-  padding: 10px 10px 6px 10px;
-  border: 1px solid red;
-}
-
-.skill-title {
-  font-weight: bold;
-}
-
-#skills span.skill-icon.col {
-  padding: 0;
-  width: 80px!important;
-  height: 80px;
-  display: inline-block;
-}
-
-#skills .skill-info {
-  display: inline-block;
-  padding: 0 5px 0 0;
-  width: auto;
-}
-
-.skill-icon svg {
-  width: 80px;
-  height: 80px;
-  border: 1px solid blue;
-  padding: 10px;
-}
 
 /* EXTRAS */
 .vertical-align {
     display: flex;
     align-items: center;
+}
+
+
+#about {
+  color: red;
+}
+
+#skills {
+  color: white;
+}
+
+#quests {
+  color: green;
+}
+
+#contact {
+  color: yellow;
+}
+/* MEDIAQUERIES */
+
+@media (max-width: 780px) {
+  section, #home, #about, #skills, #quests, #contact {
+    padding: 40px 10px;
+    height: 100%;
+  }
+
 }
