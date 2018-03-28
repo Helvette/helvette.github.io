@@ -29,7 +29,7 @@ ul {
   padding: 0;
 }
 
-#home, #about, #skills, #quests, #contact {
+#home, #skills, #quests, #contact {
   background-color: black;
   padding: 120px;
 }
@@ -56,7 +56,7 @@ ul {
   font-family: 'Press Start 2P', monospace;
   color: white;
   text-transform: uppercase;
-  text-shadow: -1px 1px black, -1px 0 black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 2px black, -2px 0 black, 2px 0 black, 0 -2px black;
   text-align: center;
   overflow: hidden;
 }
@@ -235,10 +235,49 @@ nav .nav li a:focus {
 
 /* ABOUT */
 #about {
-  background-color: #FFFBFA;
-}
-#about {
+  background-image: url(../img/lines-background.png);
+  background-repeat: repeat;
   font-family: 'Source Code Pro', monospace;
+  height: 100vh;
+}
+
+#about .section-content {
+  padding: 80px 20px 20px 20px;
+  height: 100%;
+}
+
+#about .character {/* contenedor */
+  width: 100%;
+  padding: 20px;
+}
+
+#about figure {
+  width: 100%;
+  text-align: center;
+}
+
+#about .character-img {
+  padding: 0 20px 0 0;
+}
+
+#about .character-info {
+  padding: 0 0 0 20px;
+}
+
+#about .character-text {/* contenedor */
+  height: 100%;
+  padding: 5px;
+  background-color: #FFFBFA;
+  border-radius: 15px;
+  border: 2px solid #6b313b;
+}
+
+#about .character-text-in {
+  padding: 20px;
+  border-radius: 15px;
+  border: 3px dashed #6b313b;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .genre i {
@@ -280,3 +319,25 @@ nav .nav li a:focus {
   }
 
 }
+
+
+/*
+#about .character-text::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+#about .character-text::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+#about .character-text::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #D62929;
+}*/

@@ -87,7 +87,8 @@ $(document).ready(function() {
       anchors: ['home','about', 'skills', 'quests', 'contact'],
       navigation: false,
       normalScrollElements: '#home, #about, #skills, #quests, #contact',
-      verticalCentered: false
+      verticalCentered: false,
+      keyboardScrolling: false
     });
     let loc = window.location.href;
     if(loc.indexOf('about') != -1 || loc.indexOf('skills') != -1 || loc.indexOf('quests') != -1 || loc.indexOf('contact') != -1){
