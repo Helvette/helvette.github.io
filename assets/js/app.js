@@ -27,12 +27,60 @@ const navObj = {
   contact
 }
 
+let html = 'Lenguaje de marcado que se utiliza para el desarrollo web. Última versión de HTML. Manejo de etiquetas, estructura y atributos.';
 
+let css = 'Hojas de Estilo en Cascada. CSS es un lenguaje, se utiliza para definir el estilo o la apariencia de las páginas web, escritas con HTML. Diseño, animaciones, grilla, responsive.'
+
+let js = 'Lenguaje de programación. Enfocado en darle dinamismo a la página web; desarrollo de funciones, ES6, manejo de DOM, llamadas a API';
+
+let jquery = 'Librería de JavaScript que permite simplificar la manera de interactuar con los documentos HTML, manipulación de DOM, manejo de eventos, desarrollo de animaciones y agregar interacción con la técnica AJAX a páginas web';
+
+let git = 'Software de control de versiones. Administración de ramas, manipulación de commits, actualización, edición, uso colaborativo';
+
+let github = 'Plataforma de desarrollo colaborativo utilizada para alojar proyectos utilizando el sistema de control de versiones Git.';
+
+let react = 'Librería de JavaScript de código abierto, utilizaza para la creación de Single Page Application. Manejo de componentes.';
+
+let npm = 'Node Package Manager. Gestor de paquetes JavaScript de NODE.JS, administrador de dependencias.';
+
+let bootstrap = 'Framwork de código abierto. Facilitador del diseño y estructura web, material responsive.';
+
+const skillsObj = {
+  html,
+  css,
+  js,
+  jquery,
+  git,
+  github,
+  react,
+  npm,
+  bootstrap,
+  htmlIcon: '<i class="devicon-html5-plain colored"></i>',
+  cssIcon: '<i class="devicon-css3-plain colored"></i>',
+  jsIcon: '<i class="devicon-javascript-plain colored">',
+  jqueryIcon: '<i class="devicon-jquery-plain colored"></i>',
+  gitIcon: '<i class="devicon-git-plain colored"></i>',
+  githubIcon: '<i class="devicon-github-plain colored "></i>',
+  reactIcon: '<i class="devicon-react-original colored"></i>',
+  npmIcon: '<i class="fab fa-npm"></i>',
+  bootstrapIcon: '<i class="devicon-bootstrap-plain colored"></i>'
+}
 // funciones
 // hover menú inicial
 $('#home').on('mouseenter', '.btn-nav', function() {
   $('.btn-nav').removeClass('for-hover animated infinite flash');
   $(this).addClass('for-hover animated infinite flash');
+})
+//hover en skills
+$('#skills').on('mouseenter', '.icon', function() {
+  $('#skills .icon').removeClass('active-icon animated infinite flash');
+  $(this).addClass('active-icon animated infinite flash');
+  let id = $(this).attr('id');
+  let text = skillsObj[id];
+  let icon = skillsObj[`${id}Icon`];
+  $('#skills .skill-info-container .skill-info-title').html(id);
+  $('#skills .skill-info-container .skill-info-text').html(text);
+  $('#skills .skill-info-container .skill-icon-container').html(icon)
 })
 
 //click a botón menú inicial
@@ -90,10 +138,21 @@ $(document).ready(function() {
       verticalCentered: false,
       keyboardScrolling: false
     });
+      $('[data-toggle="tooltip"]').tooltip()
+    $('img').tooltip(options)
     let loc = window.location.href;
     if(loc.indexOf('about') != -1 || loc.indexOf('skills') != -1 || loc.indexOf('quests') != -1 || loc.indexOf('contact') != -1){
       let wordLoc = loc.split('#')[1]
       $('nav').html(navObj[wordLoc])
       $('nav').show()
     }
+    if (screen.width < 720) {
+      $('.section').addClass('pp-scrollable');
+
+    }
 })
+
+// JavaScript
+window.sr = ScrollReveal({reset: true});
+sr.reveal('#skills li');
+sr.reveal('.bar');

@@ -20,7 +20,7 @@ section {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+
 }
 
 ul {
@@ -29,7 +29,7 @@ ul {
   padding: 0;
 }
 
-#home, #skills, #quests, #contact {
+#home {
   background-color: black;
   padding: 120px;
 }
@@ -200,7 +200,7 @@ nav .nav li {
   padding: 0 5px;
 }
 
-nav .nav li a {
+nav .nav li a, #quests a {
   font-family: 'VT323', monospace;
   background-color: lightgray;
   text-shadow: -1px -1px black, 1px 1px white;
@@ -222,7 +222,7 @@ nav .nav li a.home {
   font-size: 19px;
 }
 
-nav .nav li a:hover {
+nav .nav li a:hover, #quests a:hover {
   text-decoration: none;
 }
 
@@ -419,13 +419,13 @@ nav .nav li a:focus {
   font-size: 10px;
   padding: 3px;
   text-transform: lowercase;
-  color: white;
+  color: #FFFBFA;
   margin-right: 5px;
 }
 
 #about .label p:first-of-type {
   background-color: #6B313B;
-  color: white;
+  color: #FFFBFA;
 }
 
 #about .char-lvl span, #about .char-genre span {
@@ -447,7 +447,226 @@ nav .nav li a:focus {
 } /* FIN ABOUT */
 
 /* SKILLS */
+#skills {
+  background-image: url(../img/burdeo-grass.png);
+  background-repeat: repeat;
+  height: 100vh;
+}
 
+#skills .section-content {
+  padding: 80px 20px 20px 20px;
+  height: 100%;
+}
+
+#skills .icon-container {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+#skills .icon-container .icon {
+  display: inline-block;
+  color: #6B313B;
+  padding: 5px;
+  background-color: #EADEDA;
+  border-radius: 10px;
+  position: relative;
+}
+
+#skills .icon-container .icon span {
+  height: 100%;
+  display: inline-block;
+  padding: 12px;
+  border: 2px dashed #256A71;
+  border-radius: 10px;
+}
+
+#skills .icon-container .icon i {
+  font-size: 75px;
+}
+
+#skills .icons-container.row {
+  text-align: center;
+}
+
+#skills .skill-info {
+  border: 2px dashed #256A71;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+#skills .skill-info-container {
+  background-color: #EADEDA;
+  padding: 8px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#skills .skill-icon-container {
+  padding: 5px;
+  border: 8px solid #256A71;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: rgb(234, 222, 218, .5);
+}
+
+#skills .skill-icon-container i {
+  font-size: 80px;
+}
+
+#skills .skill-info-info {
+  padding: 0 10px;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+#skills .skill-info-info span {
+  width: 100%;
+  display: inline-block;
+}
+
+#skills .skill-info-title {
+  color: #FFFBFA;
+  background-color: #256A71;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+}
+
+#skills .skill-info-text {
+  font-size: 14px;
+  padding: 5px;
+  color: black;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+#skills .arrow, #skills .arrow-two {
+  position: absolute;
+  top: -20px;
+}
+
+#skills .arrow {
+  left: 50%;
+  border-left: 20px solid #EADEDA;
+  border-top: 20px solid transparent;
+}
+
+#skills .arrow-two {
+  right: 50%;
+  border-right: 20px solid #EADEDA;
+  border-top: 20px solid transparent;
+}
+
+#skills .icon.active-icon::before {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f0de ';
+  color: red;
+  font-weight: 900;
+  text-shadow: 3px 1px black, -3px 1px black, 1px -1px black, 0 -2px black;
+  position: absolute;
+  bottom: -40px;
+  left: 43%;
+  font-size: 20px;
+}
+
+/* SKILLS */
+
+
+/* MISIONES */
+#quests {
+  background-image: url(../img/blue-grass.png);
+  background-repeat: repeat;
+    padding: 65px 10px 20px 10px;
+}
+
+  .proyect-img {
+    width: 200px;
+
+  }
+
+  #quests .section-content {
+  height: 100%;
+  overflow-y: scroll;
+      padding-top: 15px;
+}
+
+#quests li {
+  margin-bottom: 40px;
+  background-color: #EADEDA;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#quests .proyect-container {
+  width: 100%;
+  padding: 20px;
+  border: 2px dashed #256A71;
+  border-radius: 10px;
+}
+
+#quests .responsive {
+  text-align: center;
+}
+
+#quests .responsive img {
+  max-height: 240px;
+  width: auto;
+}
+
+#quests .title {
+  background-color: #256A71;
+  border-radius: 10px;
+  font-family: 'VT323', monospace;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#quests .proyect-info {
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+}
+
+#quests .proyect-info .description {
+  padding: 20px 0 30px 0;
+  font-size: 14px;
+}
+
+#quests .proyect-info a {
+  padding: 8px 40px;
+  bottom: 3px;
+  position: absolute;
+}
+
+#quests .proyect-info a:first-of-type {
+  left: 15px;
+}
+
+#quests .proyect-info a:last-of-type {
+  right: 15px;
+}
+
+#quests a:focus {
+  box-shadow: none;
+  outline: none;
+  bottom: 0;
+}
+
+/* CONTACTO */
+#contact {
+  background-image: url(../img/grey-grass.png);
+  min-height: 100vh;
+  padding: 90px 20px 20px 20px;
+  text-align: center;
+}
 
 /* EXTRAS */
 .vertical-align {
@@ -455,21 +674,30 @@ nav .nav li a:focus {
     align-items: center;
 }
 
-
-#about {
-  color: red;
-}
-
-#skills {
-  color: white;
-}
-
-#quests {
-  color: green;
-}
-
 #contact {
   color: yellow;
+}
+
+.section-content .forheight {
+  height: 100%;
+}
+
+#contact .contacto {
+  text-align: center;
+}
+
+#contact .contacto figure {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+#contact .contacto figure img {
+  width: 100px;
+  height: auto;
 }
 /* MEDIAQUERIES */
 
@@ -478,27 +706,46 @@ nav .nav li a:focus {
     padding: 40px 10px;
     height: 100%;
   }
-
+  #contact {
+    padding: 80px 10px;
+  }
+  #about .character-text-in {
+    padding: 10px;
+  }
+  #about .character-text-in p {
+    padding: 0;
+  }
+  #skills .icon-container {
+    margin-bottom: 15px;
+  }
+  #skills .skill-info-container {
+    margin-top: 20px;
+  }
+  #quests .proyect-info a {
+    padding: 5px 15px;
+  }
 }
 
 
-#about .character-text-in::-webkit-scrollbar-track
+#about .character-text-in::-webkit-scrollbar-track, #quests .section-content::-webkit-scrollbar-track
 {
-  background-color: #EADEDA;
+  background-color: transparent;
   border-radius: 15px;
 }
 
-#about .character-text-in::-webkit-scrollbar
+#about .character-text-in::-webkit-scrollbar, #quests .section-content::-webkit-scrollbar
 {
   width: 8px;
-  background-color: #EADEDA;
+  background-color: transparent;
 }
 
-#about .character-text-in::-webkit-scrollbar-thumb
+#about .character-text-in::-webkit-scrollbar-thumb, #quests .section-content::-webkit-scrollbar-thumb
 {
   background-color: #6B313B;
   border-radius: 10px;
 }
+
+
 
 
 

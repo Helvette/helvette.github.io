@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <!-- animate css -->
   <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <!--  -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 <body>
   <section class="noise" id="noise"></section>
@@ -46,7 +48,7 @@
         </div>
         <div class="col-12">
           <ul class="home-nav mi-menu" id="mi-menu">
-            <li><a data-menuanchor="about" href="#about" class="for-hover btn-nav for-hover animated infinite flash">Biografía</a></li>
+            <li><a data-menuanchor="about" href="#about" class="for-hover btn-nav animated infinite flash">Biografía</a></li>
             <li><a data-menuanchor="skills" href="#skills" class="skills btn-nav">Habilidades</a></li>
             <li><a data-menuanchor="quests" href="#quests" class="quests btn-nav">Misiones</a></li>
             <li><a data-menuanchor="contact" href="#contact" class="contact btn-nav">Contacto</a></li>
@@ -57,7 +59,7 @@
 
     <section id="about" class="section">
         <div class="section-content">
-          <div class="row">
+          <div class="row forheight">
             <div class="col-12 col-md-4 character-img vertical-align">
               <div class="character col-12 col-md-10 offset-md-1">
                 
@@ -94,17 +96,201 @@
         </div>
     </section> <!-- fin about -->
 
-    <section id="skills" class="section">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, labore quis in ratione non. Laudantium, illo, voluptate! Aspernatur recusandae, inventore expedita ullam accusantium dolorum nemo earum, beatae dolore aut quidem.</p>
-    </section>
+    <section id="skills" class="section"> <!-- sección habilidades -->
+      <div class="section-content">
+        <div class="row icons-container">
+          <div class="col-12">
+              <div class="icon-container">
+                <span class="icon flash animated infinite active-icon" id="html"><span><i class="devicon-html5-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="css"><span><i class="devicon-css3-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="js"><span><i class="devicon-javascript-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="jquery"><span><i class="devicon-jquery-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="git"><span><i class="devicon-git-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="github"><span><i class="devicon-github-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="react"><span><i class="devicon-react-original"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="bootstrap"><span><i class="devicon-bootstrap-plain"></i></span></span>
+              </div>
+              <div class="icon-container">
+                <span class="icon" id="npm"><span><i class="fab fa-npm"></i></span></span>
+              </div>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 skill-info-container">
+                <div class="arrow"></div>
+                <div class="arrow-two"></div>
+                <div class="skill-info vertical-align">
+                  <div class="skill-icon-container">
+                    <i class="devicon-html5-plain colored"></i>
+                  </div>
+                  <div class="skill-info-info">
+                    <span class="skill-info-title">HTML5</span>
+                    <span class="skill-info-text">Lenguaje de marcado que se utiliza para el desarrollo web. Última versión de HTML. Manejo de etiquetas, estructura y atributos.</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      </div>
+    </section> <!-- fin habilidades -->
 
 
-    <section id="quests" class="section">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae corporis, consequatur asperiores omnis possimus fugit ipsam similique, temporibus nulla illo eaque optio voluptas excepturi explicabo hic quo aspernatur numquam inventore.</p>
-    </section>
+    <section id="quests" class="section"> <!-- misiones -->
+      <div class="row section-content">
+        <div class="col-12 col-md-10 offset-md-1">
+          <ul>
+            <li class="row fadeInLeft animated">
+              <div class="proyect-container row">
+                <div class="proyect-img col-12 col-md-6">
+                  <figure>
+                    <img src="assets/img/pm-home.png" alt="PropmtMe" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Prompt Me
+                  </span>
+                  <p class="description">
+                    Prompt Me es un sitio web hecho con la ayuda de Tumblr Api, autenticación y database de Firebase. Entrega prompts obtenidos desde Tumblr basado en palabra claves, o en caso de no tener cuenta, generados aleatoriamente.
+                  </p>
+                  <a href="https://malditoprotozoo.github.io/promptMe" target="_blank">Demo</a>
+                  <a href="https://github.com/malditoprotozoo/promptMe" target="_blank">Código</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="row fadeInRight animated">
+              <div class="proyect-container row">
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Pokedex
+                  </span>
+                  <p class="description">
+                    Catálogo Pokémon; enlista a los Pokemon mostrando 20 por página y además cuenta un buscador que entrega todas las coincidencias con el valor ingresado. Información recolectada desde la PokeApi.
+                  </p>
+                  <a href="https://helvette.github.io/pokedex" target="_blank">Demo</a>
+                  <a href="https://github.com/Helvette/pokedex" target="_blank">Código</a>
+                </div>
+                <div class="proyect-img col-12 col-md-6">
+                  <figure>
+                    <img src="assets/img/pokedex-visible.png" alt="Pokedex" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+              
+            </li>
+            <li class="row fadeInLeft animated">
+              <div class="proyect-container row">
+                <div class="proyect-img col-12 col-md-6">
+                  <figure>
+                    <img src="assets/img/nerd-home.png" alt="Nerd" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Nerd
+                  </span>
+                  <p class="description">
+                    Nerd Bookstore es una bookstore online simulada, fue desarrollada como una Singe Page Application gracias a la ayuda del framework Sammy.js.
+                  </p>
+                  <a href="https://malditoprotozoo.github.io/nerd" target="_blank">Demo</a>
+                  <a href="https://github.com/malditoprotozoo/nerd" target="_blank">Código</a>
+                </div>
+              </div>
+            </li>
+            <li class="row fadeInRight animated">
+              <div class="proyect-container row">
+                <div class="proyect-img col-12 col-md-6">
+                  <figure class="responsive">
+                    <img src="assets/img/trivia.png" alt="Trivia" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Sphynx Trivia
+                  </span>
+                  <p class="description">
+                    Aplicación web con diseño mobile, Sphynx Trivia es un juego de preguntas&respuestas, cuyo contenido se vale de la Open Trivia API. Posee diversas categorías y, además dos modalidades de preguntas.
+                  </p>
+                  <a href="https://helvette.github.io/trivia" target="_blank">Demo</a>
+                  <a href="https://github.com/Helvette/trivia" target="_blank">Código</a>
+                </div>
+              </div>
+            </li>
+            <li class="row fadeInLeft animated">
+              <div class="proyect-container row">
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Lyft Mobile
+                  </span>
+                  <p class="description">
+                    Lyft Mobile es una aplicación con diseño web que simula la funcionalidad de registro de una app tipo Lyft.
+                  </p>
+                  <a href="https://helvette.github.io/lyft-mobile" target="_blank">Demo</a>
+                  <a href="https://github.com/Helvette/lyft-mobile" target="_blank">Código</a>
+                </div>
+                <div class="proyect-img col-12 col-md-6">
+                  <figure class="responsive">
+                    <img src="assets/img/lyft-home.png" alt="Lyft Mobile" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </li>
+
+            <li class="row fadeInRight animated">
+              <div class="proyect-container row">
+                <div class="proyect-img col-12 col-md-6">
+                  <figure class="responsive">
+                    <img src="assets/img/listock.png" alt="Listock" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Listock
+                  </span>
+                  <p class="description">
+                    De diseño mobile, Listock es una aplicación de inventario para el emprendedor novato; ayuda a mantener un orden y manejo tanto del stock como de las ganancias. Desarrollada a través de React.
+                  </p>
+                  <a href="https://pamearteaga.github.io/square-app/" target="_blank">Demo</a>
+                  <a href="https://github.com/pamearteaga/square-app" target="_blank">Código</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section> <!-- fin misiones -->
 
     <section id="contact" class="section">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis assumenda ut amet cumque recusandae esse eius minus architecto iusto ullam iste, dolores labore mollitia vero enim, aliquid saepe, laboriosam optio.</p>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <figure>
+              <img src="assets/img/pixel-computer.gif" alt="E-mail" class="img-fluid">
+            </figure>
+          </div>
+          <div class="contacto col-12 col-md-4">
+            <figure><a href="mailto:malastrugo@live.cl"><img src="assets/img/email.png" alt="Mail" class="img-fluid" data-toggle="tooltip" data-placement="top" title="malastugro@live.cl"></a></figure>
+            <figure><a href="https://www.linkedin.com/in/letferreira/" target="_blank"><img src="assets/img/linkedin.png" alt="Linkedin" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Linkedin"></a></figure>
+            <figure><a href="https://github.com/Helvette" target="_blank"><img src="assets/img/github.png" alt="Github" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Github"></a></figure>
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </div> <!-- fin content -->
@@ -123,13 +309,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- noise -->
     <script src="assets/js/grained.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- app.js -->
     <script src="assets/js/app.js"></script>
     <!-- fontawesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- pagepiling -->
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.pagepiling.css" />
-    
     <script type="text/javascript" src="assets/js/jquery.pagepiling.min.js"></script>
+
 </body>
 </html>
