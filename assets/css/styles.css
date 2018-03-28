@@ -235,8 +235,9 @@ nav .nav li a:focus {
 
 /* ABOUT */
 #about {
-  background-image: url(../img/lines-background.png);
+  background-image: url(../img/grass-background.png);
   background-repeat: repeat;
+  background-size: auto;
   font-family: 'Source Code Pro', monospace;
   height: 100vh;
 }
@@ -254,6 +255,7 @@ nav .nav li a:focus {
 #about figure {
   width: 100%;
   text-align: center;
+  margin: 20px 0;
 }
 
 #about .character-img {
@@ -264,25 +266,184 @@ nav .nav li a:focus {
   padding: 0 0 0 20px;
 }
 
-#about .character-text {/* contenedor */
+#about .character-text {/* contenedor border: 3px dashed #6b313b; */
   height: 100%;
   padding: 5px;
-  background-color: #FFFBFA;
+  background-color: #EADEDA;
   border-radius: 15px;
-  border: 2px solid #6b313b;
 }
 
 #about .character-text-in {
-  padding: 20px;
+  padding: 10px 40px;
   border-radius: 15px;
-  border: 3px dashed #6b313b;
-    overflow-y: scroll;
-    height: 100%;
+  overflow-y: scroll;
+  height: 100%;
+    border: 2px dashed #256A71;
+}
+
+/* medals */
+#about .medals {
+  text-align: right;
+  display: inline-block;
+}
+
+#about .ul {
+  text-align: right;
+}
+
+#about .medals span {
+  display: block;
+  text-align: center;
+  padding: 2px 0;
+  border: 2px solid #256A71;
+  background-color: #256A71;
+  border-radius: 50px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-family: 'VT323', monospace;
+  color: white;
+}
+
+#about .medals li {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  padding: 3px;
+  border: 2px dashed #256A71;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #256A71;
+}
+
+#about .medals li img {
+  background-color: #EADEDA;
+  border-radius: 50%;
+}
+
+#about .character-text-in p {
+  font-size: 13px;
+  color: #090C08;
+  padding: 20px 40px;
+  margin: 0;
+  text-align: center;
+
+}
+
+#about .character-text-in p a {
+  background-color: #FFE521;
+  color: #454851;
+  padding: 0 5px;
+  font-weight: 600;
+}
+
+
+#about .character-text-in hr {
+  border-top: 5px dashed #256A71;
+}
+
+#about .character-text-in hr:first-of-type {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#about .character-text-in hr:last-of-type {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+
+#about .character {
+  position: relative;
+}
+
+#about .char-name, #about .char-job, #about .char-rank, #about .char-lvl, #about .char-genre {
+  display: block;
+  text-align: left;
+  margin: 0;
+  position: relative;
+}
+
+#about .char-lvl, #about .char-genre {
+  display: block;
+  text-align: right;
+}
+
+#about .char-name span, #about .char-job span, #about .char-rank span, #about .char-lvl span, #about .char-genre span {
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  border: 2px solid #6B313B;
+  text-transform: uppercase;
+  color: black;
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 14px;
+  width: auto;
+  font-family: 'VT323', monospace;
+  background-color: #6B313B;
+  color:#FFFBFA;
+}
+
+
+#about .char-job span, #about .char-rank span {
+  background-color: #256A71;
+  border: #256A71;
+}
+
+#about .char-rank span {
+  background-color: ;
+}
+
+#about .char-job {
+  padding-left: 10px;
+  border-top: 0;
+}
+
+#about .char-rank {
+  border-top: 0;
+  padding-left: 20px;
+}
+
+#about .label {
+  display: inline-block;
+  position: absolute;
+  top: -23px;
+  left: 0;
+}
+
+#about .label p {
+  background-color: #256A71;
+  margin: 0;
+  display: inline-block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 10px;
+  padding: 3px;
+  text-transform: lowercase;
+  color: white;
+  margin-right: 5px;
+}
+
+#about .label p:first-of-type {
+  background-color: #6B313B;
+  color: white;
+}
+
+#about .char-lvl span, #about .char-genre span {
+  border-radius: 10px;
+  display: inline-block;
+  width: auto;
+}
+
+#about .char-genre, #about .char-lvl {
+  margin-bottom: 5px;
+}
+
+#about span.genre {
+  padding: 0;
 }
 
 .genre i {
   color: pink;
-  text-shadow: -2px 0 black, -2px 0 black, 2px 0 black, 0 -2px black;
 } /* FIN ABOUT */
 
 /* SKILLS */
@@ -319,6 +480,26 @@ nav .nav li a:focus {
   }
 
 }
+
+
+#about .character-text-in::-webkit-scrollbar-track
+{
+  background-color: #EADEDA;
+  border-radius: 15px;
+}
+
+#about .character-text-in::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #EADEDA;
+}
+
+#about .character-text-in::-webkit-scrollbar-thumb
+{
+  background-color: #6B313B;
+  border-radius: 10px;
+}
+
 
 
 /*
