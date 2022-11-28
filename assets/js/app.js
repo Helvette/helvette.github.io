@@ -45,6 +45,8 @@ let npm = 'Node Package Manager. Gestor de paquetes JavaScript de NODE.JS, admin
 
 let bootstrap = 'Framwork de código abierto. Facilitador del diseño y estructura web, material responsive.';
 
+let mongodb = 'Sistema de base de datos NoSQL orientado a documentos de código abierto y escrito en C++ que ofrece una gran escalabilidad y flexibilidad, así como un modelo de consultas e indexación avanzado.';
+
 const skillsObj = {
   html,
   css,
@@ -53,6 +55,7 @@ const skillsObj = {
   git,
   github,
   react,
+  mongodb,
   npm,
   bootstrap,
   htmlIcon: '<i class="devicon-html5-plain colored"></i>',
@@ -62,6 +65,7 @@ const skillsObj = {
   gitIcon: '<i class="devicon-git-plain colored"></i>',
   githubIcon: '<i class="devicon-github-plain colored "></i>',
   reactIcon: '<i class="devicon-react-original colored"></i>',
+  mongodbIcon: '<i class="devicon-mongodb-plain-wordmark colored"></i>',
   npmIcon: '<i class="fab fa-npm"></i>',
   bootstrapIcon: '<i class="devicon-bootstrap-plain colored"></i>'
 }
@@ -109,8 +113,9 @@ $('.home-nav').on('click', 'li a', function() {
   let newContent = navObj[anchor];
   //console.log(newContent)
   $('nav').html(newContent);
+  console.log($(this).attr('data-menuanchor'));
   if ($(this).attr('data-menuanchor') === 'home') {
-    $('nav').hide()
+    $('nav').hide();
   }
 })
 
@@ -119,16 +124,15 @@ function animating(element, effect){
   $(element).addClass(`animated ${effect}`)
 }
 
-
 // ejecutar al cargar la página
 $(document).ready(function() {
-  $('nav').hide();
-    $('#noise').delay(500).fadeOut();
-    $('.content').hide().delay(1000).fadeIn()
-    animating('#home .name', 'flipInX')
-    animating('#home .home-nav', 'fadeIn')
-    animating('#home hr', 'fadeIn')
-    animating('#home .sup', 'flipInX')
+    //$('nav').hide();
+    $('#noise').delay(600).fadeOut();
+    $('.content').hide().delay(1200).fadeIn();
+    animating('#home .name', 'flipInX');
+    animating('#home .home-nav', 'fadeIn');
+    animating('#home hr', 'fadeIn');
+    animating('#home .sup', 'flipInX');
     $('#pagepiling').pagepiling({
       menu: '.mi-menu',
       direction: 'horizontal',
@@ -148,7 +152,6 @@ $(document).ready(function() {
     }
     if (screen.width < 720) {
       $('.section').addClass('pp-scrollable');
-
     }
 })
 

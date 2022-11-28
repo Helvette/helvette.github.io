@@ -46,6 +46,7 @@ ul {
   width: 100%;
   margin: 0;
   padding: 20px;
+  z-index: 1000;
 }
 
 #home {
@@ -114,9 +115,10 @@ ul {
 nav {
   background-color: #256A71;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   width: 100%;
   height: 60px;
+  display:none;
 }
 
 nav .nav {
@@ -389,9 +391,10 @@ nav .nav li a:focus {
   border: #256A71;
 }
 
+/*
 #about .char-rank span {
   background-color: ;
-}
+}*/
 
 #about .char-job {
   padding-left: 10px;
@@ -659,6 +662,14 @@ nav .nav li a:focus {
   right: 15px;
 }
 
+#quests .proyect-info a.hide-link {
+  display:none;
+}
+
+#quests .proyect-info a.no-demo-btn {
+  text-align: center;
+}
+
 #quests a:focus {
   box-shadow: none;
   outline: none;
@@ -669,14 +680,23 @@ nav .nav li a:focus {
 #contact {
   background-image: url(../img/grey-grass.png);
   min-height: 100vh;
-  padding: 90px 20px 20px 20px;
   text-align: center;
+  width: 100%;
+}
+
+.section-content {
+  width: 100%;
+}
+
+.pc-container {
+  text-align: right;
 }
 
 /* EXTRAS */
 .vertical-align {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #contact {
@@ -697,7 +717,7 @@ nav .nav li a:focus {
   padding: 10px;
   margin: 0;
   display: block;
-  text-align: center;
+  text-align: left;
 }
 
 #contact .contacto figure img {

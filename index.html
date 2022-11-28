@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Leticia Rodríguez Ferreira - Portafolio</title>
+  <!-- favicon bat <link rel="icon" type="image/x-icon?v=2" href="/assets/img/favicon.ico"/> -->
+  <link rel="icon" href="https://images.emojiterra.com/twitter/v13.1/512px/1f987.png">
+
+
   <!-- viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -19,11 +23,12 @@
   <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   <!--  -->
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
 </head>
 <body>
   <section class="noise" id="noise"></section>
-  <nav class="animated fadeInRight">
-    <div class="nav"> <!-- nav -->
+  <nav class="animated fadeInDownBig"> <!-- nav -->
+    <div class="nav"> 
       <ul class="section-info">
         <li class="in-section"><span data-future='about'>Biografía</span> <div class="circle"></div></li>
         <li class="decoration"><div class="circle"></div><div class="circle"></div><div class="circle"></div></li>
@@ -34,8 +39,8 @@
         <li><a data-menuanchor="contact" href="#contact" class="contact">Contacto</a></li>
         <li><a data-menuanchor="home" href="#home" class="home"><i class="fas fa-times-circle"></i></a></li>
       </ul>
-    </div> <!-- fin nav -->
-  </nav>
+    </div>
+  </nav> <!-- fin nav -->
   <div class="content" id="pagepiling">
     <section id="home" class="vertical-align section">
       <div class="row">
@@ -71,7 +76,7 @@
                 <figure>
                   <img src="assets/img/chibi-avatar.png" alt="Helvette">
                 </figure>
-                <span class="char-lvl"><span>Nvl 24</span></span>
+                <span class="char-lvl"><span>Nvl 28</span></span>
                 <span class="char-genre"><span><span class="genre"><i class="fas fa-venus"></i></span> Fem</span></span>
               </div>
             </div>
@@ -122,6 +127,9 @@
                 <span class="icon" id="react"><span><i class="devicon-react-original"></i></span></span>
               </div>
               <div class="icon-container">
+                <span class="icon" id="mongodb"><span><i class="devicon-mongodb-plain-wordmark"></i></span></span>
+              </div>
+              <div class="icon-container">
                 <span class="icon" id="bootstrap"><span><i class="devicon-bootstrap-plain"></i></span></span>
               </div>
               <div class="icon-container">
@@ -153,7 +161,48 @@
       <div class="row section-content">
         <div class="col-12 col-md-10 offset-md-1">
           <ul>
+
+            <li class="row fadeInRight animated">
+              <div class="proyect-container row">
+                <div class="proyect-img col-12 col-md-6">
+                  <figure class="responsive">
+                    <img src="assets/img/ChungungoGif.gif" alt="Chungungo" class="img-fluid">
+                  </figure>
+                </div>
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Chungungo
+                  </span>
+                  <p class="description">
+                    Chungungo es una plataforma educativa de suscripción que ofrece un catálogo de video-experiencias especialmente diseñados para invitar a niños de entre 2 a 6 años a jugar, crear y aprender. Desarrollada con un stack de React, Nodejs, Aws, Firebase y Mongodb.
+                  </p>
+                  <a href="https://chungungo.com/" target="_blank" class="hide-link">Sitio Web</a>
+                  <a href="https://chungungo.com/" target="_blank" class="no-demo-btn">Sitio Web</a>
+                </div>
+              </div>
+            </li>
+
             <li class="row fadeInLeft animated">
+              <div class="proyect-container row">
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Regala Chungungo
+                  </span>
+                  <p class="description">
+                    Regala Chungungo es un sitio para procesar la compra y pago de un plan de regalo de una suscripción para quién tú desees!
+                  </p>
+                  <a href="https://regala.chungungo.com/" target="_blank" class="no-demo-btn">Sitio Web</a>
+                  <a href="https://github.com/Helvette/trivia" target="_blank" class="hide-link">Código</a>
+                </div>
+                <div class="proyect-img col-12 col-md-6">
+                  <figure>
+                    <img src="assets/img/RegalaChungungo.png" alt="Regala Chungungo" class="img-fluid">
+                  </figure>
+                </div>
+              </div>
+            </li>
+
+            <li class="row fadeInRight animated">
               <div class="proyect-container row">
                 <div class="proyect-img col-12 col-md-6">
                   <figure>
@@ -167,13 +216,13 @@
                   <p class="description">
                     Prompt Me es un sitio web hecho con la ayuda de Tumblr Api, autenticación y database de Firebase. Entrega prompts obtenidos desde Tumblr basado en palabra claves, o en caso de no tener cuenta, generados aleatoriamente.
                   </p>
-                  <a href="https://malditoprotozoo.github.io/promptMe" target="_blank">Demo</a>
-                  <a href="https://github.com/malditoprotozoo/promptMe" target="_blank">Código</a>
+                  <a href="https://github.com/toridoriv/promptMe" target="_blank">Código</a>
+                  <a href="https://toridoriv.github.io/promptMe" target="_blank">Demo</a>
                 </div>
               </div>
             </li>
 
-            <li class="row fadeInRight animated">
+            <li class="row fadeInLeft animated">
               <div class="proyect-container row">
                 <div class="proyect-info col-12 col-md-6">
                   <span class="title">
@@ -182,8 +231,8 @@
                   <p class="description">
                     Catálogo Pokémon; enlista a los Pokemon mostrando 20 por página y además cuenta un buscador que entrega todas las coincidencias con el valor ingresado. Información recolectada desde la PokeApi.
                   </p>
-                  <a href="https://helvette.github.io/pokedex" target="_blank">Demo</a>
                   <a href="https://github.com/Helvette/pokedex" target="_blank">Código</a>
+                  <a href="https://helvette.github.io/pokedex" target="_blank">Demo</a>
                 </div>
                 <div class="proyect-img col-12 col-md-6">
                   <figure>
@@ -191,9 +240,9 @@
                   </figure>
                 </div>
               </div>
-              
             </li>
-            <li class="row fadeInLeft animated">
+
+            <li class="row fadeInRight animated">
               <div class="proyect-container row">
                 <div class="proyect-img col-12 col-md-6">
                   <figure>
@@ -207,18 +256,14 @@
                   <p class="description">
                     Nerd Bookstore es una bookstore online simulada, fue desarrollada como una Singe Page Application gracias a la ayuda del framework Sammy.js.
                   </p>
-                  <a href="https://malditoprotozoo.github.io/nerd" target="_blank">Demo</a>
-                  <a href="https://github.com/malditoprotozoo/nerd" target="_blank">Código</a>
+                  <a href="https://github.com/toridoriv/nerd" target="_blank">Código</a>
+                  <a href="https://toridoriv.github.io/nerd" target="_blank">Demo</a>
                 </div>
               </div>
             </li>
-            <li class="row fadeInRight animated">
+
+            <li class="row fadeInLeft animated">
               <div class="proyect-container row">
-                <div class="proyect-img col-12 col-md-6">
-                  <figure class="responsive">
-                    <img src="assets/img/trivia.png" alt="Trivia" class="img-fluid">
-                  </figure>
-                </div>
                 <div class="proyect-info col-12 col-md-6">
                   <span class="title">
                     Sphynx Trivia
@@ -226,26 +271,12 @@
                   <p class="description">
                     Aplicación web con diseño mobile, Sphynx Trivia es un juego de preguntas&respuestas, cuyo contenido se vale de la Open Trivia API. Posee diversas categorías y, además dos modalidades de preguntas.
                   </p>
-                  <a href="https://helvette.github.io/trivia" target="_blank">Demo</a>
                   <a href="https://github.com/Helvette/trivia" target="_blank">Código</a>
-                </div>
-              </div>
-            </li>
-            <li class="row fadeInLeft animated">
-              <div class="proyect-container row">
-                <div class="proyect-info col-12 col-md-6">
-                  <span class="title">
-                    Lyft Mobile
-                  </span>
-                  <p class="description">
-                    Lyft Mobile es una aplicación con diseño web que simula la funcionalidad de registro de una app tipo Lyft.
-                  </p>
-                  <a href="https://helvette.github.io/lyft-mobile" target="_blank">Demo</a>
-                  <a href="https://github.com/Helvette/lyft-mobile" target="_blank">Código</a>
+                  <a href="https://helvette.github.io/trivia" target="_blank">Demo</a>
                 </div>
                 <div class="proyect-img col-12 col-md-6">
                   <figure class="responsive">
-                    <img src="assets/img/lyft-home.png" alt="Lyft Mobile" class="img-fluid">
+                    <img src="assets/img/trivia.png" alt="Trivia" class="img-fluid">
                   </figure>
                 </div>
               </div>
@@ -265,8 +296,28 @@
                   <p class="description">
                     De diseño mobile, Listock es una aplicación de inventario para el emprendedor novato; ayuda a mantener un orden y manejo tanto del stock como de las ganancias. Desarrollada a través de React.
                   </p>
-                  <a href="https://pamearteaga.github.io/square-app/" target="_blank">Demo</a>
                   <a href="https://github.com/pamearteaga/square-app" target="_blank">Código</a>
+                  <a href="https://pamearteaga.github.io/square-app/" target="_blank">Demo</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="row fadeInLeft animated">
+              <div class="proyect-container row">
+                <div class="proyect-info col-12 col-md-6">
+                  <span class="title">
+                    Lyft Mobile
+                  </span>
+                  <p class="description">
+                    Lyft Mobile es una aplicación con diseño web que simula la funcionalidad de registro de una app tipo Lyft.
+                  </p>
+                  <a href="https://helvette.github.io/lyft-mobile" target="_blank">Demo</a>
+                  <a href="https://github.com/Helvette/lyft-mobile" target="_blank">Código</a>
+                </div>
+                <div class="proyect-img col-12 col-md-6">
+                  <figure class="responsive">
+                    <img src="assets/img/lyft-home.png" alt="Lyft Mobile" class="img-fluid">
+                  </figure>
                 </div>
               </div>
             </li>
@@ -275,16 +326,17 @@
       </div>
     </section> <!-- fin misiones -->
 
-    <section id="contact" class="section">
+    <section id="contact" class="section vertical-align">
       <div class="section-content">
         <div class="row">
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-md-6 pc-container">
             <figure>
               <img src="assets/img/pixel-computer.gif" alt="E-mail" class="img-fluid">
             </figure>
           </div>
+          <div class="col-md-2"></div>
           <div class="contacto col-12 col-md-4">
-            <figure><a href="mailto:malastrugo@live.cl"><img src="assets/img/email.png" alt="Mail" class="img-fluid" data-toggle="tooltip" data-placement="top" title="malastugro@live.cl"></a></figure>
+            <figure><a href="mailto:let.roferreira@gmail.com"><img src="assets/img/email.png" alt="Mail" class="img-fluid" data-toggle="tooltip" data-placement="top" title="let.roferreira@gmail.com"></a></figure>
             <figure><a href="https://www.linkedin.com/in/letferreira/" target="_blank"><img src="assets/img/linkedin.png" alt="Linkedin" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Linkedin"></a></figure>
             <figure><a href="https://github.com/Helvette" target="_blank"><img src="assets/img/github.png" alt="Github" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Github"></a></figure>
           </div>
@@ -294,8 +346,6 @@
     </section>
 
   </div> <!-- fin content -->
-
-
 
 
     <!-- jQuery -->
